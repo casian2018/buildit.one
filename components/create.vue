@@ -61,61 +61,8 @@
     <div v-if="step === 2" class="bg-white border rounded-lg shadow-md p-4 flex flex-col items-center">
       <h2 class="font-semibold text-[22px] py-2">Select a Navbar</h2>
       <div class="flex flex-wrap -mx-2 justify-center">
-        <button @click="selectComponent('Navbar 1')" class="btn mx-2 mb-2">
-          <img
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-            class="rounded-lg"
-          />
-        </button>
-        <button @click="selectComponent('Navbar 2')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('Navbar 3')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('Navbar 4')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('Navbar 5')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('Navbar 6')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('Navbar 7')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('Navbar 8')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
+        <button v-for="component in components" :key="component.name" @click="selectComponent(component.name)" class="btn mx-2 mb-2">
+          <img :src="component.thumbnail" alt="" class="rounded-lg" />
         </button>
       </div>
       <button
@@ -126,58 +73,11 @@
       </button>
     </div>
 
-    <!-- Step 3: About Section Selection -->
     <div v-if="step === 3" class="bg-white border rounded-lg shadow-md p-4 flex flex-col items-center">
-      <h2 class="font-semibold py-2 text-[22px]">Select the About Section</h2>
+      <h2 class="font-semibold text-[22px] py-2">Select a Hero</h2>
       <div class="flex flex-wrap -mx-2 justify-center">
-        <button @click="selectComponent('About 1')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('About 2')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('About 3')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('About 4')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('About 5')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('About 6')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('About 7')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
+        <button v-for="component in components" :key="component.name" @click="selectComponent(component.name)" class="btn mx-2 mb-2">
+          <img :src="component.thumbnail" alt="" class="rounded-lg" />
         </button>
       </div>
       <button
@@ -188,72 +88,11 @@
       </button>
     </div>
 
-    <!-- Step 4: Testimonials Section Selection -->
-    <!-- Step 4: Testimonials Section Selection -->
     <div v-if="step === 4" class="bg-white border rounded-lg shadow-md p-4 flex flex-col items-center">
-      <h2 class="font-semibold py-2 text-[22px]">
-          Select the Testimonials Section
-        </h2>
+      <h2 class="font-semibold text-[22px] py-2">Select a About</h2>
       <div class="flex flex-wrap -mx-2 justify-center">
-       
-        <button
-          @click="selectComponent('Testimonials 1')"
-          class="btn mx-2 mb-2"
-        >
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('Testimonials 2')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('Testimonials 3')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('Testimonials 4')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('Testimonials 5')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('Testimonials 6')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('Testimonials 7')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('Testimonials 8')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
+        <button v-for="component in components" :key="component.name" @click="selectComponent(component.name)" class="btn mx-2 mb-2">
+          <img :src="component.thumbnail" alt="" class="rounded-lg" />
         </button>
       </div>
       <button
@@ -264,67 +103,25 @@
       </button>
     </div>
 
-    <!-- Step 5: Contact Section Selection -->
     <div v-if="step === 5" class="bg-white border rounded-lg shadow-md p-4 flex flex-col items-center">
-      <h2 class="font-semibold py-2 text-[22px]">
-          Select the Contact Section
-        </h2>
+      <h2 class="font-semibold text-[22px] py-2">Select a Contact</h2>
       <div class="flex flex-wrap -mx-2 justify-center">
-        <button @click="selectComponent('Contact 1')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
+        <button v-for="component in components" :key="component.name" @click="selectComponent(component.name)" class="btn mx-2 mb-2">
+          <img :src="component.thumbnail" alt="" class="rounded-lg" />
         </button>
-        <button @click="selectComponent('Contact 2')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('Contact 3')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('Contact 4')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('Contact 5')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('Contact 6')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('Contact 7')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('Contact 8')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
+      </div>
+      <button
+        @click="goBackToStepOne()"
+        class="flex justify-center middle none mt-4 rounded-lg bg-blue-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+      >
+        Back
+      </button>
+    </div>
+    <div v-if="step === 6" class="bg-white border rounded-lg shadow-md p-4 flex flex-col items-center">
+      <h2 class="font-semibold text-[22px] py-2">Select a Footer</h2>
+      <div class="flex flex-wrap -mx-2 justify-center">
+        <button v-for="component in components" :key="component.name" @click="selectComponent(component.name)" class="btn mx-2 mb-2">
+          <img :src="component.thumbnail" alt="" class="rounded-lg" />
         </button>
       </div>
       <button
@@ -335,67 +132,11 @@
       </button>
     </div>
 
-    <!-- Step 6: Footer Section Selection -->
-    <div v-if="step === 6" class="bg-white border rounded-lg shadow-md p-4 flex flex-col items-center">
-      <h2 class="font-semibold py-2 text-[22px]">
-          Select the Footer Section
-        </h2>
-      <div class="flex flex-wrap -mx-2 justify-center">        
-        <button @click="selectComponent('Footer 1')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('Footer 2')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('Footer 3')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('Footer 4')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('Footer 5')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('Footer 6')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('Footer 7')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
-        </button>
-        <button @click="selectComponent('Footer 8')" class="btn mx-2 mb-2">
-          <img
-            class="rounded-lg"
-            src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
-            alt=""
-          />
+    <div v-if="step === 7" class="bg-white border rounded-lg shadow-md p-4 flex flex-col items-center">
+      <h2 class="font-semibold text-[22px] py-2">Select a Table</h2>
+      <div class="flex flex-wrap -mx-2 justify-center">
+        <button v-for="component in components" :key="component.name" @click="selectComponent(component.name)" class="btn mx-2 mb-2">
+          <img :src="component.thumbnail" alt="" class="rounded-lg" />
         </button>
       </div>
       <button
@@ -405,10 +146,27 @@
         Back
       </button>
     </div>
+
+    <div v-if="step === 8" class="bg-white border rounded-lg shadow-md p-4 flex flex-col items-center">
+      <h2 class="font-semibold text-[22px] py-2">Select a Form</h2>
+      <div class="flex flex-wrap -mx-2 justify-center">
+        <button v-for="component in components" :key="component.name" @click="selectComponent(component.name)" class="btn mx-2 mb-2">
+          <img :src="component.thumbnail" alt="" class="rounded-lg" />
+        </button>
+      </div>
+      <button
+        @click="goBackToStepOne()"
+        class="flex justify-center middle none mt-4 rounded-lg bg-blue-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+      >
+        Back
+      </button>
+    </div>
+
+    <!-- Steps 3-6 follow the same structure as Step 2 with different component categories -->
 
     <!-- Step 7: Final Step -->
     <div
-      v-if="step === 7"
+      v-if="step === 9"
       class="bg-white border rounded-lg shadow-md p-4 min-h-64 w-96 items-center justify-center"
     >
       <div class="p-4">
@@ -416,7 +174,7 @@
           Download Selected Components
         </h2>
         <!-- Display components and download buttons -->
-        <div v-for="component in components" :key="component.name" class="mt-4">
+        <div v-for="component in selectedComponents" :key="component.name" class="mt-4">
           <span class="text-[16px] font-semibold">{{ component.name }}:</span>
           <br />
           <button
@@ -439,7 +197,7 @@
         >
           Host Project
         </button>
-        <p class="my-4">Would you like to make other project ?</p>
+        <p class="my-4">Would you like to make another project?</p>
         <button
           @click="restart()"
           class="flex justify-center middle none mt-4 rounded-lg bg-blue-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
@@ -451,7 +209,7 @@
 
     <!-- Step 8: Hosting Instructions -->
     <div
-      v-if="step === 8"
+      v-if="step === 10"
       class="bg-white border rounded-lg shadow-md p-4 min-h-64 w-96 flex items-center flex-row justify-center"
     >
       <div class="p-4">
@@ -491,85 +249,47 @@
 </template>
 
 <script setup>
+import { ref, onMounted } from 'vue';
 
 const step = ref(1);
 const components = ref([]);
+const selectedComponents = ref([]);
+const category = ref("");
 
-const componentUrls = {
-  "Navbar 1": "https://example.com/navbar1.zip",
-  "Navbar 2": "https://example.com/navbar2.zip",
-  "Navbar 3": "https://example.com/navbar3.zip",
-  "Navbar 4": "https://example.com/navbar4.zip",
-  "Navbar 5": "https://example.com/navbar5.zip",
-  "Navbar 6": "https://example.com/navbar6.zip",
-  "Navbar 7": "https://example.com/navbar7.zip",
-  "Navbar 8": "https://example.com/navbar8.zip",
-  "Hero 1": "https://example.com/hero1.zip",
-  "Hero 2": "https://example.com/hero2.zip",
-  "Hero 3": "https://example.com/hero3.zip",
-  "Hero 4": "https://example.com/hero4.zip",
-  "Hero 5": "https://example.com/hero5.zip",
-  "Hero 6": "https://example.com/hero6.zip",
-  "Hero 7": "https://example.com/hero7.zip",
-  "Hero 8": "https://example.com/hero8.zip",
-  "About 1": "https://example.com/about1.zip",
-  "About 2": "https://example.com/about2.zip",
-  "About 3": "https://example.com/about3.zip",
-  "About 4": "https://example.com/about4.zip",
-  "About 5": "https://example.com/about5.zip",
-  "About 6": "https://example.com/about6.zip",
-  "About 7": "https://example.com/about7.zip",
-  "About 8": "https://example.com/about8.zip",
-  "Testimonials 1": "https://example.com/testimonials1.zip",
-  "Testimonials 2": "https://example.com/testimonials2.zip",
-  "Testimonials 3": "https://example.com/testimonials3.zip",
-  "Testimonials 4": "https://example.com/testimonials4.zip",
-  "Testimonials 5": "https://example.com/testimonials5.zip",
-  "Testimonials 6": "https://example.com/testimonials6.zip",
-  "Testimonials 7": "https://example.com/testimonials7.zip",
-  "Testimonials 8": "https://example.com/testimonials8.zip",
-  "Contact 1": "https://example.com/contact1.zip",
-  "Contact 2": "https://example.com/contact2.zip",
-  "Contact 3": "https://example.com/contact3.zip",
-  "Contact 4": "https://example.com/contact4.zip",
-  "Contact 5": "https://example.com/contact5.zip",
-  "Contact 6": "https://example.com/contact6.zip",
-  "Contact 7": "https://example.com/contact7.zip",
-  "Contact 8": "https://example.com/contact8.zip",
-  "Footer 1": "https://example.com/footer1.zip",
-  "Footer 2": "https://example.com/footer2.zip",
-  "Footer 3": "https://example.com/footer3.zip",
-  "Footer 4": "https://example.com/footer4.zip",
-  "Footer 5": "https://example.com/footer5.zip",
-  "Footer 6": "https://example.com/footer6.zip",
-  "Footer 7": "https://example.com/footer7.zip",
-  "Footer 8": "https://example.com/footer8.zip",
+const fetchComponents = async (category) => {
+  // Replace with actual database call
+  const response = await fetch(`/api/components?category=${category}`);
+  const data = await response.json();
+  components.value = data;
 };
 
 const nextStep = () => {
   step.value++;
+  if (step.value > 1 && step.value < 7) {
+    setCategoryForStep(step.value);
+    fetchComponents(category.value);
+  }
 };
 
 const selectComponent = (component) => {
-  components.value.push({ name: component }); // Store components with names
+  selectedComponents.value.push({ name: component });
   nextStep();
 };
 
 const downloadStructure = () => {
   // Logic to download the initial structure
   const link = document.createElement("a");
-  link.href =
-    "https://data.codeko.ro/raw-aXBmczovL1FtVHl3UGZVeDNTQzRkRWozdVZlanM4dEtxZWlQeUR6Sld0TlhSdGhQMTdVZXgvbnV4dC56aXA=";
+  link.href = "https://example.com/initial-structure.zip";
   link.download = "initial-structure.zip";
   link.click();
 };
 
 const downloadComponent = (component) => {
-  const url = componentUrls[component];
+  const url = components.value.find(comp => comp.name === component).downloadUrl;
   if (url) {
     const link = document.createElement("a");
     link.href = url;
-    link.download = component.replace(/ /g, "_") + ".zip"; // Replacing spaces with underscores
+    link.download = component.replace(/ /g, "_") + ".zip";
     link.click();
   }
 };
@@ -585,8 +305,39 @@ function goBackToStepOne() {
 }
 
 function restart() {
-  if (step.value > 1) {
-    step.value = 1;
+  step.value = 1;
+  selectedComponents.value = [];
+}
+
+function setCategoryForStep(step) {
+  switch (step) {
+    case 2:
+      category.value = "navbar";
+      break;
+    case 3:
+      category.value = "hero";
+      break;
+    case 4:
+      category.value = "about";
+      break;
+    case 5:
+      category.value = "contact";
+      break;
+    case 6:
+      category.value = "footer";
+      break;
+      case 7:
+      category.value = "table";
+      break;
+      case 8:
+      category.value = "form";
+      break;
+    default:
+      category.value = "";
   }
 }
+
+onMounted(() => {
+  fetchComponents("navbar");
+});
 </script>

@@ -20,6 +20,7 @@
           <option value="input">Form</option>
           <option value="table">Table</option>
           <option value="modal">Footer</option>
+          <option value="about">About</option>
         </select>
       </div>
       <div class="mb-4">
