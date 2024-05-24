@@ -9,18 +9,17 @@
           >Category</label
         >
         <select
-          type="text"
           id="category"
           v-model="category"
           class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
         >
-          <option value="button" :value="Navbar">Navbar</option>
-          <option value="card" :value="Hero">Hero</option>
-          <option value="form" :value="Contact">Contact</option>
-          <option value="input" :value="Form">Form</option>
-          <option value="table" :value="Table">Table</option>
-          <option value="modal" :value="Footer">Footer</option>
-          <option value="about" :value="About">About</option>
+          <option value="Navbar">Navbar</option>
+          <option value="Hero">Hero</option>
+          <option value="Contact">Contact</option>
+          <option value="Form">Form</option>
+          <option value="Table">Table</option>
+          <option value="Footer">Footer</option>
+          <option value="About">About</option>
         </select>
       </div>
       <div class="mb-4">
@@ -57,7 +56,7 @@
         />
       </div>
       <div class="mb-4">
-        <label for="imageURL" class="block text-sm font-medium text-gray-700"
+        <label for="uid" class="block text-sm font-medium text-gray-700"
           >User ID</label
         >
         <input
