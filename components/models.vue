@@ -3,7 +3,7 @@
     class="h-full flex w-full justify-center items-center p-2 px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
   >
     <div
-      class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-4 md:p-2 xl:p-5"
+      class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-4 md:p-2 xl:p-5"
     >
       <!-- card  -->
       <div

@@ -8,12 +8,19 @@
         <label for="category" class="block text-sm font-medium text-gray-700"
           >Category</label
         >
-        <input
+        <select
           type="text"
           id="category"
           v-model="category"
           class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
-        />
+        >
+          <option value="button">Navbar</option>
+          <option value="card">Hero</option>
+          <option value="form">Contact</option>
+          <option value="input">Form</option>
+          <option value="table">Table</option>
+          <option value="modal">Footer</option>
+        </select>
       </div>
       <div class="mb-4">
         <label for="title" class="block text-sm font-medium text-gray-700"
