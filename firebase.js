@@ -18,7 +18,3 @@ const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider();
 
 export { app, db, addDoc, auth, googleProvider, signInWithPopup, createUserWithEmailAndPassword, signInWithEmailAndPassword };
-
-export const collection = (collectionName) => {
-  return db.collection(collectionName);
-} 

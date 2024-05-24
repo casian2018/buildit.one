@@ -84,9 +84,6 @@ import {
   googleProvider,
   signInWithPopup,
   createUserWithEmailAndPassword,
-  db,
-  collection,
-  addDoc,
 } from "../firebase.js";
 
 
@@ -99,15 +96,8 @@ const registerWithGoogle = async () => {
     const result = await signInWithPopup(auth, googleProvider);
     const user = result.user;
 
-    // Add user data to Firestore with user.uid as document ID
-    const userRef = collection(db, "users");
-    await addDoc(userRef, {
-      uid: user.uid,
-      email: user.email,
-      // Add other user profile details as needed
-    });
 
-    window.location.href = `/profile?uid=${user.uid}`;
+    window.location.href = `/profile/${user.uid}`;
   } catch (err) {
     if (err.code === "auth/account-exists-with-different-credential") {
       error.value = "You already have an account. Please login.";

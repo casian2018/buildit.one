@@ -26,10 +26,17 @@ def update_user_docs(users):
         user_email = user.email
         # Create or update document in Firestore
         doc_ref = db.collection('users').document(user_uid)
-        doc_ref.set({
-            'uid': user_uid,
-            'email': user_email
-        })
+        # Check if the document already exists
+        if not doc_ref.get().exists:
+            doc_ref.set({
+                'uid': user_uid,
+                'email': user_email,
+                'first_name': '',
+                'last_name': '',
+                'phone_no': ''
+            })
+        else:
+            print(f"Document for user {user_uid} already exists. Skipping update.")
 
 def main():
     while True:

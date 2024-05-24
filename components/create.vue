@@ -60,7 +60,7 @@
     <!-- Step 2: Navbar Selection -->
     <div v-if="step === 2" class="bg-white border rounded-lg shadow-md p-4 flex flex-col items-center">
       <h2 class="font-semibold text-[22px] py-2">Select a Navbar</h2>
-      <div class="flex flex-wrap -mx-2 justify-center justify-center">
+      <div class="flex flex-wrap -mx-2 justify-center">
         <button @click="selectComponent('Navbar 1')" class="btn mx-2 mb-2">
           <img
             src="https://tailwindcomponents.com/storage/10609/conversions/temp70025-thumb.jpg"
