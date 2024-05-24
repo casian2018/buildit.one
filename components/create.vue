@@ -257,15 +257,23 @@ const selectedComponents = ref([]);
 const category = ref("");
 
 const fetchComponents = async (category) => {
-  // Replace with actual database call
-  const response = await fetch(`/api/components?category=${category}`);
-  const data = await response.json();
-  components.value = data;
+  try {
+    console.log(`Fetching components for category: ${category}`);
+    const response = await fetch(`/api/components?category=${category}`);
+    if (!response.ok) {
+      throw new Error(`Failed to fetch components: ${response.statusText}`);
+    }
+    const data = await response.json();
+    console.log(`Fetched data:`, data);
+    components.value = data;
+  } catch (error) {
+    console.error(error);
+  }
 };
 
 const nextStep = () => {
   step.value++;
-  if (step.value > 1 && step.value < 7) {
+  if (step.value > 1 && step.value < 9) {
     setCategoryForStep(step.value);
     fetchComponents(category.value);
   }
@@ -277,7 +285,6 @@ const selectComponent = (component) => {
 };
 
 const downloadStructure = () => {
-  // Logic to download the initial structure
   const link = document.createElement("a");
   link.href = "https://example.com/initial-structure.zip";
   link.download = "initial-structure.zip";
@@ -326,10 +333,10 @@ function setCategoryForStep(step) {
     case 6:
       category.value = "footer";
       break;
-      case 7:
+    case 7:
       category.value = "table";
       break;
-      case 8:
+    case 8:
       category.value = "form";
       break;
     default:

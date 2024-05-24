@@ -1,3 +1,5 @@
-[ ] profile used by userUID, to show email, and userUID
-[ ] components to be shown from the "/components" from firebase
-[ ] at "/" page need the grid to show the last 12 added component
+[x] profile used by userUID, to show email, and userUID
+[x] components to be shown from the "/components" from firebase
+[x] at "/" page need the grid to show the last 12 added component
+[ ] stay logged in
+[ ] chat help

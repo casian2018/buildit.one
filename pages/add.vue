@@ -14,13 +14,13 @@
           v-model="category"
           class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
         >
-          <option value="button">Navbar</option>
-          <option value="card">Hero</option>
-          <option value="form">Contact</option>
-          <option value="input">Form</option>
-          <option value="table">Table</option>
-          <option value="modal">Footer</option>
-          <option value="about">About</option>
+          <option value="button" :value="Navbar">Navbar</option>
+          <option value="card" :value="Hero">Hero</option>
+          <option value="form" :value="Contact">Contact</option>
+          <option value="input" :value="Form">Form</option>
+          <option value="table" :value="Table">Table</option>
+          <option value="modal" :value="Footer">Footer</option>
+          <option value="about" :value="About">About</option>
         </select>
       </div>
       <div class="mb-4">
