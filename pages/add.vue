@@ -8,19 +8,12 @@
         <label for="category" class="block text-sm font-medium text-gray-700"
           >Category</label
         >
-        <select
+        <input
+          type="text"
           id="category"
           v-model="category"
           class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
-        >
-          <option value="Navbar">Navbar</option>
-          <option value="Hero">Hero</option>
-          <option value="Contact">Contact</option>
-          <option value="Form">Form</option>
-          <option value="Table">Table</option>
-          <option value="Footer">Footer</option>
-          <option value="About">About</option>
-        </select>
+        />
       </div>
       <div class="mb-4">
         <label for="title" class="block text-sm font-medium text-gray-700"
@@ -56,7 +49,7 @@
         />
       </div>
       <div class="mb-4">
-        <label for="uid" class="block text-sm font-medium text-gray-700"
+        <label for="imageURL" class="block text-sm font-medium text-gray-700"
           >User ID</label
         >
         <input
@@ -84,14 +77,12 @@
 import { ref } from "vue";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "~/firebase.js";
-
 // Form data
 const category = ref("");
 const title = ref("");
 const url = ref("");
 const imageURL = ref("");
 const uid = ref("");
-
 // Function to add a new component to Firestore
 const addComponent = async () => {
   try {
