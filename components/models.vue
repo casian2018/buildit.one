@@ -56,7 +56,7 @@ import { collection, getDocs, limit, query } from 'firebase/firestore';
 const components = ref([]);
 
 const fetchComponents = async () => {
-  const q = query(collection(db, 'components'), limit(12));
+  const q = query(collection(db, 'components'), limit(9));
   const querySnapshot = await getDocs(q);
   components.value = querySnapshot.docs.map(doc => doc.data());
 };

@@ -53,11 +53,12 @@
           >User ID</label
         >
         <input
-          type="text"
-          id="uid"
-          v-model="uid"
-          class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
-        />
+      type="text"
+      id="uid"
+      v-model="uid"
+      class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+      readonly
+    />
       </div>
       <div>
         <button
@@ -82,11 +83,10 @@ const category = ref("");
 const title = ref("");
 const url = ref("");
 const imageURL = ref("");
-const uid = ref("");
 // Function to add a new component to Firestore
 const addComponent = async () => {
   try {
-    await addDoc(collection(db, "components"), {
+    await addDoc(collection(db, "quene"), {
       category: category.value,
       title: title.value,
       url: url.value,
@@ -105,6 +105,15 @@ const addComponent = async () => {
     alert("Error adding component");
   }
 };
+
+
+
+
+import { computed } from 'vue';
+import { useUserStore } from '~/stores/user.js';
+
+const userStore = useUserStore();
+const uid = computed(() => userStore.user?.uid || '');
 </script>
 
 <style scoped>
