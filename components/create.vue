@@ -49,9 +49,31 @@
       </div>
     </div>
 
-    <!-- Step 2: Select Components with Search -->
+    <!-- Step 2: Select Framework -->
     <div
       v-if="step === 2"
+      class="bg-white border rounded-lg shadow-md p-4 flex flex-col items-center"
+    >
+      <h2 class="font-semibold text-[22px] py-2">Select Your Framework</h2>
+      <div class="flex justify-around w-full">
+        <button
+          @click="selectFramework('next')"
+          class="middle none center mr-4 rounded-lg bg-blue-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+        >
+          Next.js
+        </button>
+        <button
+          @click="selectFramework('nuxt')"
+          class="middle none center mr-4 rounded-lg bg-green-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-green-500/20 transition-all hover:shadow-lg hover:shadow-green-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+        >
+          Nuxt.js
+        </button>
+      </div>
+    </div>
+
+    <!-- Step 3: Select Components with Search -->
+    <div
+      v-if="step === 3"
       class="bg-white border rounded-lg shadow-md p-4 flex flex-col items-center"
     >
       <h2 class="font-semibold text-[22px] py-2">Select Components</h2>
@@ -96,9 +118,9 @@
       </button>
     </div>
 
-    <!-- Step 3: View and Download Selected Components -->
+    <!-- Step 4: View and Download Selected Components -->
     <div
-      v-if="step === 3"
+      v-if="step === 4"
       class="bg-white border rounded-lg shadow-md p-4 flex flex-col items-center"
     >
       <h2 class="font-semibold text-[22px] py-2">Selected Components</h2>
@@ -116,12 +138,17 @@
         </button>
       </div>
       <button
-        @click="nextStep"
-        class="middle none center mt-4 rounded-lg bg-yellow-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+        @click="openAllComponents"
+        class="middle none center mt-4 rounded-lg bg-yellow-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-yellow-500/20 transition-all hover:shadow-lg hover:shadow-yellow-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
       >
-        Host Your Project
+        Open All Components
       </button>
-
+      <button
+        @click="downloadAllSelectedComponents"
+        class="middle none center mt-4 rounded-lg bg-green-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-green-500/20 transition-all hover:shadow-lg hover:shadow-green-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+      >
+        Download All
+      </button>
       <button
         @click="restart"
         class="middle none center mt-4 rounded-lg bg-blue-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
@@ -131,7 +158,7 @@
     </div>
 
     <div
-      v-if="step === 4"
+      v-if="step === 5"
       class="bg-white border rounded-lg shadow-md p-4 min-h-64 w-96 flex items-center flex-row justify-center"
     >
       <div class="p-4">
@@ -194,6 +221,7 @@ import { db } from "../firebase";
 import { collection, query, getDocs } from "firebase/firestore";
 
 const step = ref(1);
+const framework = ref("");
 const components = ref([]);
 const selectedComponents = ref([]);
 const searchQuery = ref("");
@@ -227,9 +255,14 @@ watch(searchQuery, searchComponents);
 
 const nextStep = () => {
   step.value++;
-  if (step.value === 2) {
+  if (step.value === 3) {
     fetchComponents();
   }
+};
+
+const selectFramework = (selectedFramework) => {
+  framework.value = selectedFramework;
+  nextStep();
 };
 
 const toggleSelectComponent = (component) => {
@@ -265,6 +298,18 @@ const downloadComponent = (component) => {
   }
 };
 
+const downloadAllSelectedComponents = () => {
+  selectedComponents.value.forEach((component) => {
+    downloadComponent(component);
+  });
+};
+
+const openAllComponents = () => {
+  selectedComponents.value.forEach((component) => {
+    window.open(component.url, '_blank');
+  });
+};
+
 const goBackToStepOne = () => {
   if (step.value > 1) {
     step.value--;
@@ -273,6 +318,7 @@ const goBackToStepOne = () => {
 
 const restart = () => {
   step.value = 1;
+  framework.value = "";
   selectedComponents.value = [];
 };
 

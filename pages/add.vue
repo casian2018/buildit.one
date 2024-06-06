@@ -27,13 +27,27 @@
         />
       </div>
       <div class="mb-4">
+        <label for="title" class="block text-sm font-medium text-gray-700"
+          >Tailwind</label
+        >
+        <select
+          type="text"
+          id="tailwind"
+          v-model="tailwind"
+          class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+        >
+        <option value="tailwind">Yes</option>
+        <option value="CSS">No</option>
+        </select>
+      </div>
+      <div class="mb-4">
         <label for="url" class="block text-sm font-medium text-gray-700"
-          >URL</label
+          >Code</label
         >
         <input
           type="text"
-          id="url"
-          v-model="url"
+          id="code"
+          v-model="code"
           class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
         />
       </div>
@@ -81,7 +95,8 @@ import { db } from "~/firebase.js";
 // Form data
 const category = ref("");
 const title = ref("");
-const url = ref("");
+const tailwind = ref("");
+const code = ref("");
 const imageURL = ref("");
 // Function to add a new component to Firestore
 const addComponent = async () => {
@@ -89,7 +104,8 @@ const addComponent = async () => {
     await addDoc(collection(db, "quene"), {
       category: category.value,
       title: title.value,
-      url: url.value,
+      tailwind: tailwind.value,
+      code: code.value,
       imageURL: imageURL.value,
       uid: uid.value,
     });
@@ -97,7 +113,8 @@ const addComponent = async () => {
     // Clear form fields
     category.value = "";
     title.value = "";
-    url.value = "";
+    tailwind.value = "";
+    code.value = "";
     imageURL.value = "";
     uid.value = "";
   } catch (error) {

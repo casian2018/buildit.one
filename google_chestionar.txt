@@ -1,0 +1,264 @@
+1. Ai participat la un spectacol de teatru în ultimul an?
+    a. Da
+    b. Nu
+
+2. Dacă da, cât de des participi la spectacole de teatru?
+    a. Lunar
+    b. Trimestrial
+    c. Anual
+    d. Mai rar de o dată pe an
+
+3. Ce tipuri de spectacole de teatru preferi? (Bifați toate care se aplică)
+    a. Piese clasice
+    b. Piese contemporane
+    c. Musicaluri
+    d. Opere
+    e. Oneman showuri
+    f. Altul: __________
+
+4. Care sunt principalele motive pentru care participi la spectacole de teatru? (Bifați toate care se aplică)
+    a. Interes cultural
+    b. Divertisment
+    c. Socializare
+    d. Îmbogățirea cunoștințelor
+    e. Susținerea prietenilor/familiei
+    f. Altul: __________
+
+5. Cum ai aflat despre ultimul spectacol de teatru la care ai participat?
+    a. Rețele sociale
+    b. Prieteni/Familie
+    c. Publicitate (TV, radio, afișe)
+    d. Websiteul teatrului
+    e. Altul: __________
+
+6. În ce măsură ești de acord cu următoarea afirmație: "Teatrul este o formă importantă de cultură în societate".
+    a. Complet de acord
+    b. De acord
+    c. Neutru
+    d. În dezacord
+    e. Complet în dezacord
+
+7. Cât de satisfăcut(ă) ești de calitatea spectacolelor de teatru la care ai participat în ultimul an?
+    a. Foarte satisfăcut(ă)
+    b. Satisfăcut(ă)
+    c. Neutru
+    d. Nesatisfăcut(ă)
+    e. Foarte nesatisfăcut(ă)
+
+8. Care crezi că este cel mai mare beneficiu al participării la spectacole de teatru?
+    a. Dezvoltarea personală
+    b. Relaxarea
+    c. Învățarea de noi lucruri
+    d. Socializarea
+    e. Altul: __________
+
+9. Ce tear determina să participi mai des la spectacole de teatru?
+    a. Prețuri mai accesibile
+    b. Varietate mai mare de spectacole
+    c. Programe convenabile
+    d. Informații mai bune despre spectacole
+    e. Altul: __________
+
+10. Ai prefera să participi la spectacole de teatru întro locație:
+     a. Mare (teatru național, operă)
+     b. Mică (teatru de cartier, grupuri independente)
+     c. În aer liber
+     d. Online (streaming)
+
+11. Cât de des participi la alte activități culturale (ex. concerte, expoziții de artă)?
+     a. Zilnic
+     b. Săptămânal
+     c. Lunar
+     d. Trimestrial
+     e. Anual
+
+12. În ce măsură crezi că teatrul contribuie la dezvoltarea ta personală și intelectuală?
+     a. Foarte mult
+     b. Mult
+     c. Moderat
+     d. Puțin
+     e. Deloc
+
+13. Cât de accesibile sunt pentru tine biletele la spectacolele de teatru?
+     a. Foarte accesibile
+     b. Accesibile
+     c. Moderat accesibile
+     d. Puțin accesibile
+     e. Deloc accesibile
+
+14. Ce aspect al unui spectacol de teatru este cel mai important pentru tine?
+     a. Calitatea actorilor
+     b. Scenariul
+     c. Regia
+     d. Scenografia
+     e. Atmosfera generală
+
+15. Ai recomanda participarea la spectacole de teatru prietenilor și familiei tale?
+     a. Da
+     b. Nu
+
+16. Care sunt sursele tale principale de informare despre evenimentele culturale din orașul tău? (Bifați toate care se aplică)
+     a. Rețele sociale
+     b. Prieteni/Familie
+     c. Publicitate (TV, radio, afișe)
+     d. Websiteuri de evenimente
+     e. Altul: __________
+
+17. Ce ar putea face teatrele pentru a atrage un public mai larg?
+     a. Prețuri mai mici
+     b. Diversificarea spectacolelor
+     c. Mai multe evenimente interactive
+     d. Promovare mai eficientă
+     e. Altul: __________
+
+18. În ce măsură crezi că teatrul poate influența pozitiv comunitatea?
+     a. Foarte mult
+     b. Mult
+     c. Moderat
+     d. Puțin
+     e. Deloc
+
+19. Ai fi interesat(ă) să participi la ateliere sau cursuri de teatru?
+     a. Da
+     b. Nu
+
+20. Consideri că teatrul ar trebui să fie parte integrantă a educației școlare?
+     a. Da
+     b. Nu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      1. Deții în prezent un animal de companie?
+       __ Da
+       __ Nu
+
+   2. Dacă da, ce tip de animal de companie deții? (Bifați toate care se aplică)
+       __ Câine
+       __ Pisică
+       __ Pește
+       __ Pasăre
+       __ Rozător
+       __ Altul: __________
+
+   3. Cât de des îți hrănești animalul de companie pe zi?
+       __ O dată
+       __ De două ori
+       __ De mai multe ori
+       __ Altul: __________
+
+   4. Cât de des îți duci animalul de companie la veterinar?
+       __ Lunar
+       __ Trimestrial
+       __ Anual
+       __ Numai când este bolnav
+
+   5. Cât timp pe zi petreci cu activități de îngrijire a animalului de companie (ex. hrănire, curățenie, exerciții)?
+       __ Mai puțin de 30 minute
+       __ 30 minute  1 oră
+       __ 12 ore
+       __ Peste 2 ore
+
+   6. În ce măsură ești de acord cu următoarea afirmație: "Deținerea unui animal de companie îmbunătățește calitatea vieții mele".
+       __ Complet de acord
+       __ De acord
+       __ Neutru
+       __ În dezacord
+       __ Complet în dezacord
+
+   7. Cât de bine informat(ă) te consideri în legătură cu nevoile de bază ale animalului tău de companie?
+       __ Foarte bine informat(ă)
+       __ Bine informat(ă)
+       __ Moderat informat(ă)
+       __ Puțin informat(ă)
+       __ Deloc informat(ă)
+
+   8. Care este principala sursă de informare despre îngrijirea animalului de companie?
+       __ Internet
+       __ Veterinar
+       __ Prieteni/Familie
+       __ Cărți/Reviste
+       __ Altul: __________
+
+   9. Teai confruntat vreodată cu dificultăți în îngrijirea animalului de companie? Dacă da, ce tipuri de dificultăți?
+       __ Da: __________
+       __ Nu
+
+   10. Ai participat vreodată la cursuri sau seminarii despre îngrijirea animalelor de companie?
+        __ Da
+        __ Nu
+
+   11. Consideri că școala/școala copilului tău ar trebui să includă programe educative despre îngrijirea animalelor de companie?
+        __ Da
+        __ Nu
+
+   12. În ce măsură crezi că deținerea unui animal de companie contribuie la reducerea stresului zilnic?
+        __ Foarte mult
+        __ Mult
+        __ Moderat
+        __ Puțin
+        __ Deloc
+
+   13. Ai fost vreodată nevoit(ă) să renunți la un animal de companie? Dacă da, din ce motiv?
+        __ Da: __________
+        __ Nu
+
+   14. Ești de acord cu următoarea afirmație: "Este important ca toate animalele de companie să fie sterilizate/castrate".
+        __ Complet de acord
+        __ De acord
+        __ Neutru
+        __ În dezacord
+        __ Complet în dezacord
+
+   15. Cât de des interacționezi cu alte persoane care dețin animale de companie?
+        __ Zilnic
+        __ Săptămânal
+        __ Lunar
+        __ Rar
+        __ Niciodată
+
+   16. În ce măsură crezi că există suficiente facilități (ex. parcuri pentru câini, clinici veterinare) în comunitatea ta pentru îngrijirea animalelor de companie?
+        __ Foarte mult
+        __ Mult
+        __ Moderat
+        __ Puțin
+        __ Deloc
+
+   17. Care crezi că este cel mai mare beneficiu al deținerii unui animal de companie?
+        __ Companie
+        __ Reducerea stresului
+        __ Creșterea activității fizice
+        __ Socializare
+        __ Altul: __________
+
+   18. Ce părere ai despre adopția animalelor de companie din adăposturi?
+        __ Complet de acord
+        __ De acord
+        __ Neutru
+        __ În dezacord
+        __ Complet în dezacord
+
+   19. Care ar fi motivul principal pentru care nu ai deține un animal de companie?
+        __ Lipsa de timp
+        __ Costuri financiare
+        __ Probleme de sănătate (alergii, etc.)
+        __ Lipsa spațiului
+        __ Altul: __________
+
+   20. Cât de importantă consideri că este educația publicului cu privire la responsabilitatea deținerii animalelor de companie?
+        __ Foarte importantă
+        __ Importantă
+        __ Moderat importantă
+        __ Puțin importantă
+        __ Deloc importantă
